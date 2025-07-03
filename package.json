@@ -7,7 +7,7 @@
   "scripts": {
     "test": "test server.js",
     "start": "node server.js",
-    "build": "npm run build"
+    "build": "node ./server.js"
   },
   "author": "Jack Durden",
   "license": "ISC",
