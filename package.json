@@ -11,6 +11,7 @@
     "url": "git+https://github.com/antares-farias/base_firebase.git"
   },
   "author": "Jack Durden",
+  "type": "module",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
