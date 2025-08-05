@@ -1,5 +1,5 @@
 import express from 'express';
-import {config} from './public/config.js';
+import {config} from './api/public/config.js';
 const app = express()
 const port = config.port
 
@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 // 👇️ "/home/john/Desktop/javascript"
 const __dirname = path.dirname(__filename);
 
-import connect_fb from './connect_firebase.js';
+import connect_fb from './api/connect_firebase.js';
 //const server = require('http').Server(app);
 //const helmet = require('helmet');
 
@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
 //send index
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/main.html");
+    res.sendFile(__dirname + "/api/main.html");
 })
 //send public folder
 app.use('/public', express.static(__dirname + '/public'));
