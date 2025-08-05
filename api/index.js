@@ -1,5 +1,5 @@
 import express from 'express';
-import {config} from './config.js';
+import {config} from './public/config.js';
 const app = express()
 const port = config.port
 
@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 // 👇️ "/home/john/Desktop/javascript"
 const __dirname = path.dirname(__filename);
 
-import connect_fb from '../connect_firebase.js';
+import connect_fb from './connect_firebase.js';
 //const server = require('http').Server(app);
 //const helmet = require('helmet');
 
