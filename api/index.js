@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
 //send index
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/main.html");
 })
 //send public folder
 app.use('/public', express.static(__dirname + '/public'));
